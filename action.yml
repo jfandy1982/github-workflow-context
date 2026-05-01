@@ -1,0 +1,29 @@
+name: 'github-workflow-context'
+description: 'GitHub action for outputting affected Git SHAs and branch names'
+author: 'jfandy1982'
+
+branding:
+  icon: 'filter'
+  color: 'blue'
+
+inputs:
+  base:
+    description: 'Base of the current branch (usually main)'
+  head:
+    description: 'Latest commit of the current branch (usually HEAD)'
+
+outputs:
+  base-branch:
+    description: 'Name of the base branch'
+  base-sha:
+    description: 'SHA of the base branch tip'
+  head-branch:
+    description: 'Name of the head branch'
+  head-sha:
+    description: 'SHA of the head branch tip'
+  default-branch:
+    description: 'Name of the default branch of the repository'
+
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
