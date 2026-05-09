@@ -9,6 +9,7 @@ GitHub Action that extracts and outputs workflow context information (branch nam
 ## Known Structure
 
 - `experiments/` — contains the action definition (`action.yml`) in development; deliberate working area
+  - `experiments/superpowers/` — brainstorming specs and implementation plans from Claude sessions (gitignored, local only); check here for prior design decisions before starting new work
 - `node_modules/` — exists locally but is gitignored; not committed to the repo
 
 ## Tooling
